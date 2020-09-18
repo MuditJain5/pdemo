@@ -4,12 +4,16 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html, body{
+    height: 100%;
+}
+
 #main{
 
     background: white;
     display: flex;
     padding: 20px 180px;
-    min-height: 100vh;
+    min-height: 100%;
     justify-content: space-between;
     align-items: center;
 
