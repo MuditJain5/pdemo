@@ -77,6 +77,7 @@ nav svg {
           box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   padding: 30px;
   margin-bottom: 40px;
+  color: white;
 }
 
 .item-section #tab-report .report-card h4 {
