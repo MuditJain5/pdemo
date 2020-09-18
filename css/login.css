@@ -107,12 +107,12 @@ html, body {
 
 @media only screen and (max-width: 1100px) {
   #main {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
 
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 880px) {
   #main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -121,14 +121,14 @@ html, body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
   }
   #main img {
     margin-bottom: 30px;
   }
   #main .form-div {
-    padding: 40px 40px 60px 40px;
+    padding: 60px 60px 80px 60px;
   }
   #main .heading {
     width: calc(100%);
@@ -140,7 +140,13 @@ html, body {
 
 @media only screen and (max-width: 500px) {
   #main .form-div {
-    padding: 20px 20px 40px 20px;
+    padding: 40px 40px 60px 40px;
+  }
+  #main .heading h1 {
+    font-size: 25px;
+  }
+  #main .heading h3 {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=login.css.map */
