@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
 body{
@@ -39,7 +40,7 @@ nav{
     }
 }
 
-.row{
+.main-content{
     min-height: 100vh;
     padding-top: 70px;
     background: #f8f8f8;
@@ -58,3 +59,54 @@ nav{
     }
 
 }
+
+.item-section{
+    padding: 50px !important;
+
+    #tab-today-event{
+
+        table{
+            background: white;
+            border-radius: 20px;
+
+            th, td{
+                border-top: none;
+                word-wrap: break-word;
+                padding-left: 20px;
+            }
+        }
+
+    }
+
+    #tab-report{
+
+        .report-card{
+            position: relative;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+            padding: 30px;
+            margin-bottom: 40px;
+
+            h4{
+                
+                margin-bottom: 40px;
+            }
+
+            p{
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            svg{
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                font-size: 50px;
+            }
+
+        }
+    
+    }
+}
+

@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
 * {
   font-family: 'Montserrat', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -36,7 +38,7 @@ nav svg {
   font-size: 25px;
 }
 
-.row {
+.main-content {
   min-height: 100vh;
   padding-top: 70px;
   background: #f8f8f8;
@@ -50,5 +52,46 @@ nav svg {
   text-align: center;
   font-weight: 700;
   padding: 20px;
+}
+
+.item-section {
+  padding: 50px !important;
+}
+
+.item-section #tab-today-event table {
+  background: white;
+  border-radius: 20px;
+}
+
+.item-section #tab-today-event table th, .item-section #tab-today-event table td {
+  border-top: none;
+  word-wrap: break-word;
+  padding-left: 20px;
+}
+
+.item-section #tab-report .report-card {
+  position: relative;
+  border-radius: 10px;
+  border: none;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.item-section #tab-report .report-card h4 {
+  margin-bottom: 40px;
+}
+
+.item-section #tab-report .report-card p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.item-section #tab-report .report-card svg {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 50px;
 }
 /*# sourceMappingURL=dashboard.css.map */
