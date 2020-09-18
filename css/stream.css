@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+.embed-frame {
+  min-height: 90vh;
+  min-width: 95vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.embed-frame .brand img {
+  width: 300px;
+}
+
+.embed-frame iframe {
+  min-width: 70vw;
+  min-height: 70vh;
+}
+
+.embed-frame svg {
+  font-size: 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.embed-frame svg:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+}
+
+.ask-question {
+  position: absolute;
+  padding: 2px 8px;
+  bottom: 5px;
+  left: 50%;
+  margin-left: -65px;
+}
+
+.ask-question:hover {
+  background: #f4f4f4;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+.buttons .btn {
+  margin-right: 20px;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 10px;
+}
+/*# sourceMappingURL=stream.css.map */

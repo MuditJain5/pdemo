@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#main {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 180px;
+  min-height: 100vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main img {
+  width: 300px;
+}
+
+#main .form-div {
+  background: #00a8e8;
+  padding: 40px 40px 60px 40px;
+  border-radius: 10px;
+}
+
+#main .heading {
+  width: 350px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+#main .heading h1 {
+  font-weight: 700;
+}
+
+#main .buttons {
+  text-align: center;
+  margin: 20px;
+}
+
+#main .buttons .btn:active, #main .buttons .btn:focus {
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#main .buttons .btn:nth-child(1) {
+  border-radius: 20px 0 0 20px;
+  padding: 5px 15px;
+}
+
+#main .buttons .btn:nth-child(2) {
+  border-radius: 0 20px 20px 0;
+  padding: 5px 10px;
+}
+
+#main .form-display {
+  display: block;
+}
+
+#main .form-hide {
+  display: none;
+}
+
+#main form {
+  width: 280px;
+  text-align: center;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#main form .form-group {
+  position: relative;
+}
+
+#main form .form-group input {
+  border-radius: 30px;
+  padding: 18px;
+  padding-left: 35px;
+  border: 1px solid #6c757d;
+  color: black;
+}
+
+#main form .form-group svg {
+  position: absolute;
+  left: 13px;
+  top: 11px;
+  color: #6c757d;
+}
+
+#main form .btn {
+  border-radius: 30px;
+  padding: 8px;
+}
+
+@media only screen and (max-width: 1100px) {
+  #main {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  #main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #main img {
+    margin-bottom: 30px;
+  }
+  #main .form-div {
+    padding: 40px 40px 60px 40px;
+  }
+  #main .heading {
+    width: calc(100%);
+  }
+  #main form {
+    width: calc(100%);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #main .form-div {
+    padding: 20px 20px 40px 20px;
+  }
+}
+/*# sourceMappingURL=login.css.map */
