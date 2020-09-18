@@ -68,3 +68,42 @@ html, body{
         padding: 5px 10px;
     }
 }
+
+@media only screen and (max-width: 1200px){
+
+    .embed-frame{
+        min-height: 90%;
+
+        iframe{
+            min-width: 70vw;
+            min-height: calc(70vw / 16 * 9);
+        }
+    }
+
+}
+
+@media only screen and (max-width: 900px){
+
+    .embed-frame{
+        min-height: 80%;
+
+        iframe{
+            min-width: 80vw;
+            min-height: calc(80vw / 16 * 9);
+        }
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+
+    .embed-frame{
+        min-height: 70%;
+
+        iframe{
+            min-width: 95vw;
+            min-height: calc(95vw / 16 * 9);
+        }
+    }
+
+}

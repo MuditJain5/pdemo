@@ -131,10 +131,10 @@ html, body {
     padding: 60px 60px 80px 60px;
   }
   #main .heading {
-    width: calc(100%);
+    width: 100%;
   }
   #main form {
-    width: calc(100%);
+    width: 100%;
   }
 }
 
