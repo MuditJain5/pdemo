@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 * {
   font-family: 'Montserrat', sans-serif;
   -webkit-box-sizing: border-box;
@@ -41,7 +41,7 @@ nav svg {
 .main-content {
   min-height: 100vh;
   padding-top: 70px;
-  background: #f8f8f8;
+  background: #f4f4f4;
 }
 
 .item-list {
@@ -58,15 +58,37 @@ nav svg {
   padding: 50px !important;
 }
 
+.item-section #tab-today-event .table-responsive {
+  border-radius: 15px;
+}
+
 .item-section #tab-today-event table {
   background: white;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .item-section #tab-today-event table th, .item-section #tab-today-event table td {
   border-top: none;
   word-wrap: break-word;
-  padding-left: 20px;
+  padding: 15px;
+}
+
+.item-section #tab-today-event table thead {
+  background: var(--red);
+  color: white;
+}
+
+.item-section #tab-today-event table thead th {
+  font-size: 16px;
+}
+
+.item-section #tab-today-event table tbody th, .item-section #tab-today-event table tbody td {
+  font-weight: 600;
+  color: #292c40;
+}
+
+.item-section #tab-today-event table tbody tr {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .item-section #tab-report .report-card {
@@ -91,8 +113,9 @@ nav svg {
 
 .item-section #tab-report .report-card svg {
   position: absolute;
-  right: 20px;
-  top: 20px;
-  font-size: 50px;
+  right: -10px;
+  bottom: 0;
+  font-size: 120px;
+  opacity: 0.3;
 }
 /*# sourceMappingURL=dashboard.css.map */

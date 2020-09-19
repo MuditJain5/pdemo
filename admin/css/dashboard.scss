@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 * {
     font-family: 'Montserrat', sans-serif;
@@ -43,7 +43,8 @@ nav{
 .main-content{
     min-height: 100vh;
     padding-top: 70px;
-    background: #f8f8f8;
+    background: #f4f4f4;
+
 }
 
 .item-list{
@@ -65,14 +66,39 @@ nav{
 
     #tab-today-event{
 
+        .table-responsive{
+            border-radius: 15px;
+        }
+
         table{
             background: white;
-            border-radius: 20px;
+            border-radius: 15px;
 
             th, td{
                 border-top: none;
                 word-wrap: break-word;
-                padding-left: 20px;
+                padding: 15px;
+            }
+
+            thead{
+
+                background: var(--red);
+                color: white;
+
+                th{
+                    font-size: 16px;
+                }
+            }
+
+            tbody{
+                th,td{
+                    font-weight: 600;
+                    color: #292c40;
+                }
+
+                tr{
+                    border-top: 1px solid rgba(0,0,0,.125);
+                }
             }
         }
 
@@ -101,9 +127,10 @@ nav{
 
             svg{
                 position: absolute;
-                right: 20px;
-                top: 20px;
-                font-size: 50px;
+                right: -10px;
+                bottom: 0;
+                font-size: 120px;
+                opacity: 0.3;
             }
 
         }
