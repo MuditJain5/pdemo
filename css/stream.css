@@ -68,13 +68,13 @@ html, body {
   }
 }
 
-.embed-frame img {
+.embed-frame .icons img {
   width: 30px;
   margin-right: 10px;
   margin-top: 5px;
 }
 
-.embed-frame img:hover {
+.embed-frame .icons img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   cursor: pointer;
