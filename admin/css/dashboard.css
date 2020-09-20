@@ -91,7 +91,7 @@ nav svg {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-.item-section #tab-report .report-card {
+.item-section #tab-report .report-card, .item-section #tab-home .report-card {
   position: relative;
   border-radius: 10px;
   border: none;
@@ -102,16 +102,16 @@ nav svg {
   color: white;
 }
 
-.item-section #tab-report .report-card h4 {
+.item-section #tab-report .report-card h4, .item-section #tab-home .report-card h4 {
   margin-bottom: 40px;
 }
 
-.item-section #tab-report .report-card p {
+.item-section #tab-report .report-card p, .item-section #tab-home .report-card p {
   font-size: 20px;
   font-weight: 700;
 }
 
-.item-section #tab-report .report-card svg {
+.item-section #tab-report .report-card svg, .item-section #tab-report .report-card i, .item-section #tab-home .report-card svg, .item-section #tab-home .report-card i {
   position: absolute;
   right: -10px;
   bottom: 0;

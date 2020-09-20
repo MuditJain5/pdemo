@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstract</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/create.css">
+</head>
+<body>
+
+    <div class="container pt-4 pb-5">
+        <div>
+            <h1>Create Event</h1>
+        </div>
+        <div class="progress my-3" style="height: 2px;">
+            <div class="progress-bar" role="progressbar" style="width: 1%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <form>
+            <div class="form-group row">
+                <label for="event-name" class="col-sm-2 col-form-label">Event Name</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="event-name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="event-date" class="col-sm-2 col-form-label">Event Date</label>
+                <div class="col-sm-4">
+                  <input type="date" class="form-control" id="event-date">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="event-time" class="col-sm-2 col-form-label">Event Time</label>
+                <div class="col-sm-4">
+                  <input type="time" class="form-control" id="event-time">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="about-self" class="col-sm-2 col-form-label">About self</label>
+                <div class="col-sm-8">
+                    <textarea class="form-control" id="about-self" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="logo" class="col-sm-2 col-form-label">Logo</label>
+                <div class="col-sm-4">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="logo">
+                        <label class="custom-file-label" for="logo">Choose file</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="background-image" class="col-sm-2 col-form-label">Background Image</label>
+                <div class="col-sm-4">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="background-image">
+                        <label class="custom-file-label" for="background-image">Choose file</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="window-registration" class="col-sm-2 col-form-label">Window Registration</label>
+                <div class="col-sm-8">
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="window-registration">
+                        <label class="custom-control-label" for="window-registration"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="registration-end-date" class="col-sm-2 col-form-label">Registration End Date</label>
+                <div class="col-sm-4">
+                  <input type="date" class="form-control" id="registration-end-date">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="registration-end-time" class="col-sm-2 col-form-label">Registration End Time</label>
+                <div class="col-sm-4">
+                  <input type="time" class="form-control" id="registration-end-time">
+                </div>
+            </div>
+            <div class="buttons mt-5 pt-5">
+                <a href="./dashboard.html"><button type="button" class="btn btn-danger">Cancel</button></a>
+                <a href="./create2.html"><button type="button" class="btn btn-success">Save and Next</button></a>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="../vendor/jQuery/jquery.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
