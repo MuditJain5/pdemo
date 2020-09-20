@@ -77,7 +77,19 @@ html, body{
     }
 }
 
-.buttons{
+.left-buttons{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+
+    .btn{
+        margin-left: 20px;
+        border-radius: 30px;
+        padding: 5px 10px;
+    }
+}
+
+.right-buttons{
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -113,7 +125,7 @@ html, body{
         }
     }
 
-    .buttons{
+    .right-buttons{
         position: absolute;
         bottom: 0px;
         right: 5px;
@@ -142,7 +154,16 @@ html, body{
         }
     }
 
-    .buttons{
+    .left-buttons{
+        bottom: 30px;
+        left: 10px;
+
+        .btn{
+            margin-left: 0;
+        }
+    }
+
+    .right-buttons{
         bottom: 20px;
         right: 10px;
     }
