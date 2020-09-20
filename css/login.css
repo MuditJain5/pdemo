@@ -25,11 +25,11 @@ html, body {
 }
 
 #main img {
-  width: 300px;
+  width: 0px;
 }
 
 #main .form-div {
-  padding: 40px 40px 60px 40px;
+  padding: 20px 20px 40px 20px;
   border-radius: 10px;
 }
 
@@ -58,12 +58,12 @@ html, body {
 
 #main .buttons .btn:nth-child(1) {
   border-radius: 20px 0 0 20px;
-  padding: 5px 15px;
+  padding: 8px 20px;
 }
 
 #main .buttons .btn:nth-child(2) {
   border-radius: 0 20px 20px 0;
-  padding: 5px 10px;
+  padding: 8px 15px;
 }
 
 #main .form-display {
