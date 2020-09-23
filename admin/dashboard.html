@@ -19,6 +19,9 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-search fa-lg"></i></a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="./create1.html"><Button class="btn btn-danger">Create a event</Button></a>
               </li>
               <li class="nav-item dropdown">
@@ -41,9 +44,11 @@
           <div class="list-group" id="list-tab" role="tablist">
             <a class="list-group-item list-group-item-action active" id="home" data-toggle="list" href="#tab-home" role="tab" aria-controls="home">Home</a>
             <a class="list-group-item list-group-item-action" id="today-event" data-toggle="list" href="#tab-today-event" role="tab" aria-controls="today-event">Today's Events</a>
-            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Upcoming Events</a>
-            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Past Events</a>
+            <a class="list-group-item list-group-item-action" id="upcoming-event" data-toggle="list" href="#tab-upcoming-event" role="tab" aria-controls="upcoming-event">Upcoming Events</a>
+            <a class="list-group-item list-group-item-action" id="past-event" data-toggle="list" href="#tab-past-event" role="tab" aria-controls="past-event">Past Events</a>
             <a class="list-group-item list-group-item-action" id="report" data-toggle="list" href="#tab-report" role="tab" aria-controls="report">Reports</a>
+            <a class="list-group-item list-group-item-action" id="event-details" data-toggle="list" href="#tab-event-details" role="tab" aria-controls="event-details">Details</a>
+            <a class="list-group-item list-group-item-action" id="participant" data-toggle="list" href="#tab-participant" role="tab" aria-controls="participant">participant</a>
           </div>
         </div>
         <div class="col-12 col-lg-10 item-section">
@@ -52,14 +57,14 @@
               <div class="row">
                 <div class="col-4">
                     <div class="card report-card bg-success">
-                        <h4>Participants enrolled</h4>
+                        <h5>Participants enrolled</h5>
                         <p>34</p>
                         <i class="fas fa-users"></i>
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="card report-card bg-primary">
-                        <h4>Today's events</h4>
+                        <h5>Today's events</h5>
                         <p>22</p>
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar2-week-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 3.5c0-.276.244-.5.545-.5h10.91c.3 0 .545.224.545.5v1c0 .276-.244.5-.546.5H2.545C2.245 5 2 4.776 2 4.5v-1zM8.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM3 10.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
@@ -68,7 +73,7 @@
                 </div>
                 <div class="col-4">
                     <div class="card report-card bg-danger">
-                        <h4>Participants enrolled today</h4>
+                        <h5>Participants enrolled today</h5>
                         <p>0</p>
                         <i class="fas fa-user-check"></i>
                     </div>
@@ -140,8 +145,8 @@
                     </table>
                 </div>
             </div>
-            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">B</div>
-            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">C</div>
+            <div class="tab-pane fade" id="tab-upcoming-event" role="tabpanel" aria-labelledby="upcoming-event">B</div>
+            <div class="tab-pane fade" id="tab-past-event" role="tabpanel" aria-labelledby="past-event">C</div>
             <div class="tab-pane fade" id="tab-report" role="tabpanel" aria-labelledby="report">
                 <div class="row">
                     <div class="col-4">
@@ -172,6 +177,276 @@
                         </div>
                     </div>
                     
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tab-event-details" role="tabpanel" aria-labelledby="event-details">
+                <h3><span class="font-weight-bold">Event Name: </span>My event</h3>
+                <button type="button" class="btn btn-danger rounded-pill">View Event Report</button>
+                <button type="button" class="btn btn-danger rounded-pill">Delete Event</button>
+                <button type="button" class="btn btn-danger rounded-pill">Make Event Inactive</button>
+                <h3 class="mt-4"><span class="font-weight-bold">No. of participants enrolled: </span>455</h3>
+                <button type="button" class="btn btn-danger rounded-pill">View Participant List</button>
+                <div class="accordion" id="accordionExample">
+                    <div class="card shadow-sm my-4">
+                      <div class="card-header row" id="headingOne">
+                          <div class="col-10">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                  Event Meta Details
+                                </button>
+                            </h2>
+                          </div>
+                          <div class="col-2 d-flex align-items-center justify-content-center">
+                            <a href="#"><i class="fas fa-edit"></i> Edit Event</a>
+                          </div>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12 row my-3">
+                                    <div class="col-3 font-weight-bold">Event Name:</div>
+                                    <div class="col-9">My event</div>
+                                </div>
+                                <div class="col-12 row my-3">
+                                    <div class="col-3 font-weight-bold">Event Date:</div>
+                                    <div class="col-9">Sept. 22, 2020</div>
+                                </div>
+                                <div class="col-12 row my-3">
+                                    <div class="col-3 font-weight-bold">Event Time:</div>
+                                    <div class="col-9">11 p.m.</div>
+                                </div>
+                                <div class="col-12 row my-3">
+                                    <div class="col-3 font-weight-bold">Number of active logins allowed:</div>
+                                    <div class="col-9">2</div>
+                                </div>
+                                <div class="col-12 row my-3">
+                                    <div class="col-3 font-weight-bold">About Event:</div>
+                                    <div class="col-9">3kjnbjh</div>
+                                </div>
+                                <div class="col-12 row my-3">
+                                    <div class="col-3 font-weight-bold">Window Registration:</div>
+                                    <div class="col-9">True</div>
+                                </div>
+                                <div class="col-12 row my-3">
+                                    <div class="col-3 font-weight-bold">Registration End Date & Time:</div>
+                                    <div class="col-9">Sept. 22, 2020, 11 p.m.</div>
+                                </div>
+                                <div class="col-12 row my-3">
+                                    <div class="col-3 font-weight-bold">Event Status:</div>
+                                    <div class="col-9">True</div>
+                                </div>
+
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card shadow-sm my-4">
+                        <div class="card-header row" id="headingTwo">
+                            <div class="col-10">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                      Event Meta Details
+                                    </button>
+                                </h2>
+                            </div>
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <a href="#"><i class="fas fa-edit"></i> Edit Event</a>
+                            </div>
+                        </div>
+                    
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                          <div class="card-body">
+                              <div class="row">
+                                  <div class="col-12 row my-3">
+                                      <div class="col-3 font-weight-bold">Event Name:</div>
+                                      <div class="col-9">My event</div>
+                                  </div>
+                                  <div class="col-12 row my-3">
+                                      <div class="col-3 font-weight-bold">Event Date:</div>
+                                      <div class="col-9">Sept. 22, 2020</div>
+                                  </div>
+                                  <div class="col-12 row my-3">
+                                      <div class="col-3 font-weight-bold">Event Time:</div>
+                                      <div class="col-9">11 p.m.</div>
+                                  </div>
+                                  <div class="col-12 row my-3">
+                                      <div class="col-3 font-weight-bold">Number of active logins allowed:</div>
+                                      <div class="col-9">2</div>
+                                  </div>
+                                  <div class="col-12 row my-3">
+                                      <div class="col-3 font-weight-bold">About Event:</div>
+                                      <div class="col-9">3kjnbjh</div>
+                                  </div>
+  
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-sm my-4">
+                        <div class="card-header row" id="headingThree">
+                            <div class="col-9">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                      Event Meta Details
+                                    </button>
+                                </h2>
+                            </div>
+                            <div class="col-3 d-flex align-items-center justify-content-center">
+                                <a href="#"><i class="fas fa-edit"></i> Edit Event</a>
+                            </div>
+                        </div>
+                    
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                          <div class="card-body">
+                              <div class="row">
+                                  <div class="col-12 row my-3">
+                                      <div class="col-3 font-weight-bold">Event Name:</div>
+                                      <div class="col-9">My event</div>
+                                  </div>
+                                  <div class="col-12 row my-3">
+                                      <div class="col-3 font-weight-bold">Event Date:</div>
+                                      <div class="col-9">Sept. 22, 2020</div>
+                                  </div>
+                                  <div class="col-12 row my-3">
+                                      <div class="col-3 font-weight-bold">Event Time:</div>
+                                      <div class="col-9">11 p.m.</div>
+                                  </div>
+                                  <div class="col-12 row my-3">
+                                      <div class="col-3 font-weight-bold">Number of active logins allowed:</div>
+                                      <div class="col-9">2</div>
+                                  </div>
+  
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-sm my-4">
+                        <div class="card-header row" id="headingFour">
+                            <div class="col-7">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                      Event Meta Details
+                                    </button>
+                                </h2>
+                            </div>
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <a href="#"><i class="fas fa-eye"></i> Preview</a>
+                            </div>
+                            <div class="col-3 d-flex align-items-center justify-content-center">
+                                <a href="#"><i class="fas fa-edit"></i> Edit Event</a>
+                            </div>
+                        </div>
+                    
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                          <div class="card-body">
+                              <div class="row">
+                                  <div class="col-12 row my-3">
+                                      <div class="col-3 font-weight-bold">Event Name:</div>
+                                      <div class="col-9">My event</div>
+                                  </div>
+                                  <div class="col-12 row my-3">
+                                      <div class="col-3 font-weight-bold">Event Date:</div>
+                                      <div class="col-9">Sept. 22, 2020</div>
+                                  </div>
+                                  <div class="col-12 row my-3">
+                                      <div class="col-3 font-weight-bold">Event Time:</div>
+                                      <div class="col-9">11 p.m.</div>
+                                  </div>
+                                  <div class="col-12 row my-3">
+                                      <div class="col-3 font-weight-bold">Number of active logins allowed:</div>
+                                      <div class="col-9">2</div>
+                                  </div>
+                                  <div class="col-12 row my-3">
+                                    <div class="col-3 font-weight-bold">Number of active logins allowed:</div>
+                                    <div class="col-9">2</div>
+                                  </div>
+                                  <div class="col-12 row my-3">
+                                    <div class="col-3 font-weight-bold">Number of active logins allowed:</div>
+                                    <div class="col-9">2</div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-sm my-4">
+                        <div class="card-header row" id="headingFive">
+                            <div class="col-7">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                      Event Meta Details
+                                    </button>
+                                </h2>
+                            </div>
+                            <div class="col-2 d-flex align-items-center justify-content-center">
+                                <a href="#"><i class="fas fa-eye"></i> Preview</a>
+                            </div>
+                            <div class="col-3 d-flex align-items-center justify-content-center">
+                                <a href="#"><i class="fas fa-edit"></i> Edit Event</a>
+                            </div>
+                        </div>
+                    
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                          <div class="card-body">
+                              <div class="row">
+                                  <div class="col-12 row my-3">
+                                      <div class="col-3 font-weight-bold">Event Name:</div>
+                                      <div class="col-9">My event</div>
+                                  </div>
+                                  <div class="col-12 row my-3">
+                                      <div class="col-3 font-weight-bold">Event Date:</div>
+                                      <div class="col-9">Sept. 22, 2020</div>
+                                  </div>
+                                  <div class="col-12 row my-3">
+                                      <div class="col-3 font-weight-bold">Event Time:</div>
+                                      <div class="col-9">11 p.m.</div>
+                                  </div>
+                                  <div class="col-12 row my-3">
+                                      <div class="col-3 font-weight-bold">Number of active logins allowed:</div>
+                                      <div class="col-9">2</div>
+                                  </div>
+                                  <div class="col-12 row my-3">
+                                    <div class="col-3 font-weight-bold">Number of active logins allowed:</div>
+                                    <div class="col-9">2</div>
+                                  </div>
+                                  <div class="col-12 row my-3">
+                                    <div class="col-3 font-weight-bold">Number of active logins allowed:</div>
+                                    <div class="col-9">2</div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tab-participant" role="tabpanel" aria-labelledby="participant">
+                <div class="buttons d-flex justify-content-between mb-5">
+                    <a href="#" type="button" class="btn btn-danger">Import Data</a>
+                    <a href="#" type="button" class="btn btn-danger">Export Data</a>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col"></th>
+                          <th scope="col">Name</th>
+                          <th scope="col">Mobile Number</th>
+                          <th scope="col">Email ID</th>
+                          <th scope="col">Username</th>
+                          <th scope="col">Access Code</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">-</th>
+                          <td>Mudit</td>
+                          <td>1234567890</td>
+                          <td>mudit@mudit</td>
+                          <td>mj</td>
+                          <td>345</td>
+                        </tr>
+                      </tbody>
+                    </table>
                 </div>
             </div>
           </div>

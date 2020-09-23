@@ -5,9 +5,13 @@
     box-sizing: border-box;
 }
 
+html{
+    height: 100%;
+}
+
 body{
-    overflow-x: hidden;
-    min-height: 100vh;
+    overflow: hidden;
+    height: 100vh;
 }
 
 nav{
@@ -18,7 +22,7 @@ nav{
         margin-right: 20px;
     }
 
-    .dropdown-toggle{
+    .dropdown-toggle, i{
         color: black !important;
         padding-top: 10px;
     }
@@ -41,14 +45,14 @@ nav{
 }
 
 .main-content{
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
     padding-top: 70px;
     background: #f4f4f4;
 
 }
 
 .item-list{
-
     background: #ffffff;
 
     .list-group-item{
@@ -63,8 +67,10 @@ nav{
 
 .item-section{
     padding: 50px !important;
+    overflow-y: auto;
+    height: 100%;
 
-    #tab-today-event{
+    #tab-today-event, #tab-upcoming-event, #tab-past-event, #tab-search-event, #tab-participant{
 
         .table-responsive{
             border-radius: 15px;
@@ -115,7 +121,7 @@ nav{
             margin-bottom: 40px;
             color: white;
 
-            h4{
+            h5{
                 
                 margin-bottom: 40px;
             }
@@ -136,5 +142,51 @@ nav{
         }
     
     }
+
+    #tab-event-details{
+
+        .card{
+            border: none;
+
+            .card-header{
+                background: white;
+
+                h2, .btn, button{
+                    &:focus, &:active{
+                        border: none !important;
+                        box-shadow: none !important;
+                        outline: none !important;
+                    }
+                }
+
+                .btn{
+                    color: black;
+                    font-weight: 700;
+                    font-size: 18px;
+                }
+            }
+
+            .card-body{
+                padding: 30px;
+            }
+        }
+
+    }
 }
 
+form{
+
+    .form-group{
+        padding: 10px 0;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    label{
+        font-weight: 700;
+    }
+
+}
